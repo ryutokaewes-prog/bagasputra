@@ -1,4 +1,4 @@
-import 'package:bagasputra/bagas_login/bagas_home_page.dart';
+import 'package:bagasputra/bagas_login/home_page/bagas_home_page.dart';
 import 'package:flutter/material.dart';
 
 class Bagas5 extends StatefulWidget {
@@ -30,14 +30,14 @@ class _Bagas5State extends State<Bagas5> {
                     MaterialPageRoute(builder: (context) => BagasHomePage()),
                   ),
                   style: TextButton.styleFrom(
-                    backgroundColor: Colors.pinkAccent,
+                    backgroundColor: Colors.green,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
                     ),
                   ),
                   child: Text(
                     "Go to Dashboard",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(color: Colors.white, fontSize: 15),
                   ),
                 ),
               ],

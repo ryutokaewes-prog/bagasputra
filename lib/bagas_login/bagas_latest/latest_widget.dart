@@ -1,3 +1,4 @@
+import 'package:bagasputra/bagas_login/kantin_sekolah.dart';
 import 'package:flutter/material.dart';
 
 class LatestWidget extends StatefulWidget {
@@ -19,9 +20,23 @@ class LatestWidget extends StatefulWidget {
 class _LatestWidgetState extends State<LatestWidget> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-      child: SizedBox(),
+    return GestureDetector(
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => KantinSekolah()),
+      ),
+      child: Card(
+        elevation: 2,
+        child: Column(
+          children: [
+            Image(image: AssetImage(widget.file),
+              height: 50,
+              width: 50,
+            ),
+            Text(widget.title),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -6,4 +6,9 @@ List<LatestModel> bagas = [
     title: "kantin sekola",
     location: "kantin cak bisri",
   ),
+  LatestModel(
+    file: "assets/images/kantin_seblak.jpg",
+    title: "kantin seblak",
+    location: "kantin seblak  neng rina",
+  ),
 ];

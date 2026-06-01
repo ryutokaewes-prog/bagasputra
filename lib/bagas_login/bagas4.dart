@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:bagasputra/bagas_login/bagas5.dart';
-import 'package:bagasputra/bagas_login/bagas_home_page.dart';
+import 'package:bagasputra/bagas_login/home_page/bagas_home_page.dart';
 import 'package:flutter/material.dart';
 
 class Bagas4 extends StatefulWidget {

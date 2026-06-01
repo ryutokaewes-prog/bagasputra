@@ -16,8 +16,18 @@ class _Bagas1State extends State<Bagas1> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("jbce"),
-          Text("jbce"),
+          Text(
+            "Welcome Back!",
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+          ),
+          Text(
+            "Sign in to continue",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.normal,
+              color: Colors.black,
+            ),
+          ),
           Padding(
             padding: EdgeInsets.fromLTRB(50, 20, 50, 20),
             child: TextButton(
@@ -26,20 +36,41 @@ class _Bagas1State extends State<Bagas1> {
                 MaterialPageRoute(builder: (context) => Bagas2()),
               ),
               style: TextButton.styleFrom(
-                backgroundColor: Colors.pinkAccent,
+                backgroundColor: Colors.green,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(9),
                 ),
               ),
               child: Row(
                 children: [
-                  Image.asset("assets/images/logo_google.jpg",height: 15,width: 15,),
-                  Text("continue with google"),
+                  Image.asset(
+                    "assets/images/logo_google.jpg",
+                    height: 20,
+                    width: 20,
+                  ),
+                  Text(
+                    "continue with google",
+                    style: TextStyle(fontSize: 15, color: Colors.black26),
+                  ),
                 ],
               ),
             ),
           ),
-          TextButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Register(),)), child: Text('jsbjcbscs;'))
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "dont have a acount?",
+                style: TextStyle(color: Colors.black),
+              ),
+              TextButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Register()),
+                ),
+                child: Text("Register", style: TextStyle(color: Colors.blue)),
+              ),
+            ],
+          ),
         ],
       ),
     );

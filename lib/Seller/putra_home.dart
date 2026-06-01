@@ -1,4 +1,3 @@
-import 'package:bagasputra/Seller/putra_akun.dart';
 import 'package:bagasputra/Seller/putra_menu.dart';
 import 'package:bagasputra/Seller/putra_page1.dart';
 import 'package:bagasputra/Seller/putra_model.dart';
@@ -33,12 +32,6 @@ class _PutraHomeState extends State<PutraHome> {
       icon: Icons.menu_book,
       color: Colors.black,
     ),
-    3: PutraModel(
-      page: PutraAkun(),
-      label: "Account",
-      icon: Icons.account_circle,
-      color: Colors.black,
-    ),
   };
 
   @override
@@ -46,11 +39,11 @@ class _PutraHomeState extends State<PutraHome> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         elevation: 10,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.green,
         showSelectedLabels: true,
         showUnselectedLabels: true,
-        unselectedItemColor: Colors.black,
-        unselectedLabelStyle: TextStyle(color: Colors.black),
+        unselectedItemColor: Colors.white,
+        unselectedLabelStyle: TextStyle(color: Colors.white),
         currentIndex: selectedIndex,
         onTap: (value) {
           setState(() {
@@ -60,10 +53,10 @@ class _PutraHomeState extends State<PutraHome> {
         items: page.entries
             .map(
               (e) => BottomNavigationBarItem(
-                icon: Icon(e.value.icon, color: Colors.black),
+                icon: Icon(e.value.icon, color: Colors.white),
                 label: e.value.label,
                 activeIcon: Icon(e.value.icon, color: e.value.color),
-                backgroundColor: Colors.green
+                backgroundColor: Colors.white
               ),
             )
             .toList(),

@@ -17,6 +17,6 @@ class BagasPutra extends StatefulWidget {
 class _BagasPutraState extends State<BagasPutra> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,home: PutraMenu(),);
+    return MaterialApp(debugShowCheckedModeBanner: false,home: SplashScreen(),);
   }
 }

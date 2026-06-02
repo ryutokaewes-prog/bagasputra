@@ -39,15 +39,19 @@ class _PutraMenuState extends State<PutraMenu> {
               ),
               child: Row(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.network(
-                      'https://picsum.photos/200',
-                      width: 80,
-                      height: 80,
-                      fit: BoxFit.cover,
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.grey.shade200,
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/kantin_seblak.jpg"),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
+
                   SizedBox(width: 16),
                   Expanded(
                     child: Column(

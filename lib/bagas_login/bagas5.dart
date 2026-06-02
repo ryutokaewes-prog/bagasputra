@@ -1,3 +1,4 @@
+import 'package:bagasputra/Dashboard/peran_page.dart';
 import 'package:bagasputra/bagas_login/home_page/bagas_home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class _Bagas5State extends State<Bagas5> {
                 TextButton(
                   onPressed: () => Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => BagasHomePage()),
+                    MaterialPageRoute(builder: (context) => PeranPage()),
                   ),
                   style: TextButton.styleFrom(
                     backgroundColor: Colors.green,

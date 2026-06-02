@@ -18,11 +18,11 @@ class _Bagas3State extends State<Bagas3> {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Padding(
-        padding: const EdgeInsets.all(24),
+      body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
+              SizedBox(height: 20),
               Image.asset("assets/images/logo_google.jpg"),
               Text(
                 "Welcome",

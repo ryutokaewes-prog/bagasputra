@@ -1,6 +1,7 @@
 import 'package:bagasputra/bagas_login/bagas_latest/latest_widget.dart';
 import 'package:bagasputra/bagas_login/bannerAll.dart';
 import 'package:bagasputra/bagas_login/home_page/detail_kanntin.dart';
+import 'package:bagasputra/bagas_login/home_page/detail_kantin2.dart';
 import 'package:bagasputra/bagas_login/notivication/notivication_page.dart';
 import 'package:bagasputra/bagas_login/seall.dart';
 import 'package:flutter/material.dart';
@@ -88,10 +89,46 @@ class _BagasHomePageState extends State<BagasHomePage> {
             child: Row(
 
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
               children: [
                 Image.asset(
                   "assets/images/kantin_seblak.jpg",
+                  height: 75,
+                  width: 80,
+                ),
+
+                Text("Kantin Seblak"),
+                TextButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DetailKanntin()),
+                  ),
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.green,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: Text(
+                    "Lihat",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          Padding(
+            padding: EdgeInsets.fromLTRB(50, 20, 50, 20),
+            child: Row(
+
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+              children: [
+                Image.asset(
+                  "assets/images/kantin_sekolah.jpg.jpg",
                   height: 75,
                   width: 80,
                 ),
@@ -100,7 +137,7 @@ class _BagasHomePageState extends State<BagasHomePage> {
                 TextButton(
                   onPressed: () => Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => DetailKanntin()),
+                    MaterialPageRoute(builder: (context) => DetailKantin2()),
                   ),
                   style: TextButton.styleFrom(
                     backgroundColor: Colors.green,
